@@ -4,7 +4,7 @@ steps:
     args: ["build", "-t", "gcr.io/sam-sandbox-243911/github.com/samweeks92/react-demo-stateless-frontend:$SHORT_SHA", "."]
     # push container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/sam-sandbox-249311/github.com/samweeks92/react-demo-stateless-frontend:$SHORT_SHA"]
+    args: ["push", "gcr.io/sam-sandbox-243911/github.com/samweeks92/react-demo-stateless-frontend:$SHORT_SHA"]
     # deploy container image to GKE
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
